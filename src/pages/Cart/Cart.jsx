@@ -26,14 +26,6 @@ const Cart = () => {
   useEffect(() => {
     dispatch(fetchCart(uuid_order_no));
   }, []);
-  useEffect(() => {
-    if (CartState.data) {
-      console.log(CartState.data?.items);
-      // totalAmount =
-      //   CartState.data?.items.reduce((total, item) => total + item.price, 0) ||
-      //   0;
-    }
-  }, [CartState.data]);
 
   const dec_qty = async (itemId) => {
     try {
