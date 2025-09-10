@@ -23,7 +23,7 @@ const Category = ({ selectedCategories, setSelectedCategories }) => {
   };
 
   return (
-    <div className="p-4 px-6 bg-white shadow-md min-w-[250px] max780:min-w-[200px] min-h-[90vh] mt-1 max718:hidden z-10">
+    <div className="p-4 px-6 bg-white shadow-md border-r-2 border-r-main rounded-r-xl min-w-[250px] max780:min-w-[200px] min-h-[90vh] mt-1 max718:hidden z-10">
       <h2 className="text-xl font-bold mb-4">Category</h2>
       <div className=""></div>
       {loading ? (
